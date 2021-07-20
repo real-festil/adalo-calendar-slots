@@ -1,0 +1,32 @@
+{
+  "name": "calendarnails",
+  "description": "Time slots component",
+  "version": "1.0.3",
+  "main": "index.js",
+  "license": "ISC",
+  "author": "Roman Gladyshev",
+  "scripts": {
+    "start": "adalo dev",
+    "login": "adalo login",
+    "publish": "adalo publish"
+  },
+  "adalo": {
+    "logo": "./example-logo.png",
+    "displayName": "CalendarNails",
+    "components": [
+      {
+        "name": "CalendarComponent",
+        "manifest": "./src/components/CalendarComponent/manifest.json"
+      }
+    ]
+  },
+  "dependencies": {
+    "@adalo/cli": "0.0.42",
+    "@babel/core": "^7.14.6",
+    "@babel/plugin-proposal-class-properties": "^7.14.5",
+    "@babel/preset-env": "^7.14.7",
+    "@babel/preset-react": "^7.14.5",
+    "babel-loader": "^8.2.2",
+    "moment": "^2.29.1"
+  }
+}

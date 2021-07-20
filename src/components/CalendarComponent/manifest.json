@@ -1,0 +1,124 @@
+{
+  "displayName": "CalendarComponent",
+  "defaultWidth": 160,
+  "defaultHeight": 24,
+  "components": "./index.js",
+  "icon": "./example-thumbnail.png",
+  "props": [
+    {
+      "name": "selectedSlotColor",
+      "displayName": "Выбранный слот",
+      "type": "color"
+    },
+    {
+      "name": "busySlotColor",
+      "displayName": "Занятый слот",
+      "type": "color"
+    },
+    {
+      "name": "slotColor",
+      "displayName": "Слот",
+      "type": "color"
+    },
+    {
+      "name": "currentDate",
+      "displayName": "Дата",
+      "type": "date"
+    },
+    {
+      "name": "onSelect",
+      "displayName": "На выбор времени",
+      "type": "action",
+      "arguments": [
+        {
+          "type": "date",
+          "displayName": "Начало сеанса"
+        },
+        {
+          "type": "date",
+          "displayName": "Конец сеанса"
+        }
+      ]
+    },
+    {
+      "name": "services",
+      "displayName": "Услуги",
+      "type": "list"
+    },
+    {
+      "name": "name",
+      "displayName": "Название услуги",
+      "type": "text",
+      "role": "listItem",
+      "reference": "services"
+    },
+    {
+      "name": "price",
+      "displayName": "Цена",
+      "type": "text",
+      "role": "listItem",
+      "reference": "services"
+    },
+    {
+      "name": "time",
+      "displayName": "Длительность",
+      "type": "text",
+      "role": "listItem",
+      "reference": "services"
+    },
+    {
+      "name": "slots",
+      "displayName": "Слоты",
+      "type": "text",
+      "role": "listItem",
+      "reference": "services"
+    },
+    {
+      "name": "startWork",
+      "displayName": "Время начала работы мастера",
+      "type": "text",
+      "role": "listItem",
+      "reference": "services"
+    },
+    {
+      "name": "endWork",
+      "displayName": "Время конца работы мастера",
+      "type": "text",
+      "role": "listItem",
+      "reference": "services"
+    },
+    {
+      "name": "masterEmail",
+      "displayName": "Email мастера",
+      "type": "text",
+      "role": "listItem",
+      "reference": "services"
+    },
+    {
+      "name": "masters",
+      "displayName": "Мастера",
+      "type": "list"
+    },
+    {
+      "name": "email",
+      "displayName": "Email мастера",
+      "type": "text",
+      "role": "listItem",
+      "reference": "masters"
+    },
+    {
+      "name": "startTime",
+      "displayName": "Время старта",
+      "type": "date",
+      "role": "listItem",
+      "reference": "masters"
+    },
+    {
+      "name": "endTime",
+      "displayName": "Время конца",
+      "type": "date",
+      "role": "listItem",
+      "reference": "masters"
+    }
+  ]
+}
