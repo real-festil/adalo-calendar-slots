@@ -1,7 +1,7 @@
 {
   "name": "calendarnails",
   "description": "Time slots component",
-  "version": "1.0.3",
+  "version": "1.0.5",
   "main": "index.js",
   "license": "ISC",
   "author": "Roman Gladyshev",

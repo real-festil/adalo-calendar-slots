@@ -133,6 +133,14 @@ const CalendarComponent = (props) => {
     }
   }
 
+  const getSlotOpacity = (time) => {
+    if(!getBusySlots(time)) {
+      return 0;
+    }
+
+    return 1;
+  }
+
   return (
     <View style={styles.wrapper}>
       {availableSlots && (
@@ -141,10 +149,10 @@ const CalendarComponent = (props) => {
             <TouchableOpacity
               key={slot.time}
               onPress={() => setSlots(slot.time)}
-              activeOpacity={1}
+              activeOpacity={getSlotOpacity(slot.time) === 1 ? 1 : 0}
               style={[
                 styles.slot,
-                {backgroundColor: getSlotColor(slot.time)}
+                {backgroundColor: getSlotColor(slot.time), opacity: getSlotOpacity(slot.time)}
               ]}
               ><Text>{slot.time}</Text></TouchableOpacity>
           ))}
